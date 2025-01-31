@@ -1,52 +1,118 @@
-# Login-Page-1030
-# Login Page Project
+# Login Page with XAMPP
 
-This is a simple login page project built using HTML, CSS, PHP, and MySQL. It is designed to be run locally using **XAMPP**, a popular local server environment.
+**Author**: Sourav Mondal  
+**Student ID**: 11220321030  
+**Section**: 5A
 
-## Features
-- User login and registration functionality.
-- Secure password hashing using PHP's `password_hash()` and `password_verify()` functions.
-- Basic form validation on the client and server side.
-- MySQL database integration for storing user credentials.
+This is a simple Login & Register Web Form using PHP XAMPP.
 
-## Prerequisites
-Before running this project, ensure you have the following installed:
-- [XAMPP](https://www.apachefriends.org/index.html) (for local server and MySQL database).
-- A modern web browser (e.g., Chrome, Firefox).
+## Project Overview
+
+This project includes a login page where users can input their credentials to gain access to a website or application. The login information is processed by a PHP script, and if the credentials are correct, the user is redirected to the homepage. Otherwise, an error message is displayed.
+
+## Technologies Used
+
+- **HTML**: Structure of the login form
+- **CSS**: Styling of the login page
+- **PHP**: Backend scripting to process the login credentials
+- **XAMPP**: Local server environment to run PHP scripts
+
+## Preview
+
+Here is a preview of project:
+
+### Sign-In and Registration Page
+
+<table>
+  <tr>
+    <td><img src="preview/sign-in.png" alt="Sign-in Page" width="400"/></td>
+    <td><img src="preview/register.png" alt="Registration Page" width="400"/></td>
+  </tr>
+</table>
+
+### Database and Homepage
+
+<table>
+  <tr>
+    <td><img src="preview/database.png" alt="Database Structure" width="400"/></td>
+    <td><img src="preview/users_info.png" alt="Users Info" width="400"/></td>
+    <td><img src="preview/homepage.png" alt="Homepage" width="400"/></td>
+  </tr>
+</table>
 
 ## Setup Instructions
 
-### 1. Clone the Repository
-Clone this repository to your local machine:
+Follow the steps below to set up and run this project on your local machine:
+
+### 1. Install XAMPP
+- Download and install [XAMPP](https://www.apachefriends.org/index.html) for your operating system.
+- After installation, open the XAMPP control panel.
+
+### 2. Start Apache and MySQL
+- Start the **Apache** server and **MySQL** server from the XAMPP control panel.
+
+### 3. Set up the Project Files
+- Navigate to the XAMPP installation folder, typically located in `C:\xampp\htdocs` on Windows or `/opt/lampp/htdocs` on Linux.
+- Open a terminal (Command Prompt on Windows or Terminal on Linux).
+- Run the following Git command to clone this project into `htdocs`:
+
 ```bash
-git clone https://github.com/sourav739397/Login-Page-1030.git
+git clone https://github.com/sourav739397/Login-Page-1030
 ```
-Login-Page-1030/
-├── index.php           # Main login page
-├── register.php        # User registration page
-├── dashboard.php       # Dashboard after successful login
-├── logout.php          # Logout functionality
-├── config.php          # Database configuration
-├── database.sql        # SQL file for database setup
-├── css/                # CSS stylesheets
-│   └── styles.css
-├── preview/            # Preview images
-│   ├── database.png    # Database structure preview
-│   ├── homepage.png    # Homepage preview
-│   ├── register.png    # Registration page preview
-│   ├── sign-in.png     # Sign-in page preview
-│   └── users_info.png  # Users info preview
-└── README.md           # This file
+
+### 4. Create a Database
+- Open **phpMyAdmin** from the XAMPP control panel by clicking on "Admin" next to MySQL.
+- Create a database named `login` and select it.
+    ```bash
+    CREATE DATABASE login;
+    USE login;
+    ```
+- Create a table named `users` with fields `id`, `firstName`, `lastName`,
+`email` and `password`.
+    ```bash
+    CREATE TABLE users (
+        Id INT(10) NOT NULL AUTO_INCREMENT,
+        firstName VARCHAR(50) NOT NULL,
+        lastName VARCHAR(50) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        password VARCHAR(50) NOT NULL,
+        PRIMARY KEY (Id)
+    );
+    ```
+
+### 5. Configure PHP Script
+Make sure the PHP script for processing the login form is connected to your database (if applicable). Update the database connection details in the PHP file (`db.php` or similar) if needed.
+
+### 6. Access the Project
+- Open a browser and navigate to `http://localhost/login-project` (replace `login-project` with the name of your project folder).
+- You should see the login page.
+
+## Features
+
+- **Login Form**: A simple form to enter a username and password.
+- **Backend Authentication**: The PHP script processes the login request and checks the credentials.
+- **Error Handling**: If incorrect credentials are entered, an error message is shown.
+
 
 
 ## Preview Images
 
-## Preview Images
+### Sign-In and Registration Page
 
-Here are the previews for different sections of the project:
+<table>
+  <tr>
+    <td><img src="preview/sign-in.png" alt="Sign-in Page" width="400"/></td>
+    <td><img src="preview/register.png" alt="Registration Page" width="400"/></td>
+  </tr>
+</table>
 
-- ![Database Structure](preview/database.png)
-- ![Homepage](preview/homepage.png)
-- ![Registration Page](preview/register.png)
-- ![Sign-in Page](preview/sign-in.png)
-- ![Users Info](preview/users_info.png)
+### Database and Homepage
+
+<table>
+  <tr>
+    <td><img src="preview/database.png" alt="Database Structure" width="400"/></td>
+    <td><img src="preview/users_info.png" alt="Users Info" width="400"/></td>
+    <td><img src="preview/homepage.png" alt="Homepage" width="400"/></td>
+  </tr>
+</table>
+
