@@ -15,6 +15,7 @@ This project includes a login page where users can input their credentials to ga
 - **HTML**: Structure of the login form
 - **CSS**: Styling of the login page
 - **PHP**: Backend scripting to process the login credentials
+- **JavaScript**: switching between two forms — Sign Up and Sign In
 - **XAMPP**: Local server environment to run PHP scripts
 
 ## Preview
@@ -56,13 +57,13 @@ Follow the steps below to set up and run this project on your local machine:
 - Open a terminal (Command Prompt on Windows or Terminal on Linux).
 - Run the following Git command to clone this project into `htdocs`:
 
-```bash
-git clone https://github.com/sourav739397/Login-Page-1030
-```
+    ```bash
+    git clone https://github.com/sourav739397/Login-Page-1030
+    ```
 
 ### 4. Create a Database
-- Open **phpMyAdmin** from the XAMPP control panel by clicking on "Admin" next to MySQL.
-- Create a database named `login` and select it.
+- Go to [phpMyAdmin](https://localhost/phpmyadmin).
+- Create a database named `login` ( whatever you want ) and select it.
     ```bash
     CREATE DATABASE login;
     USE login;
@@ -81,10 +82,10 @@ git clone https://github.com/sourav739397/Login-Page-1030
     ```
 
 ### 5. Configure PHP Script
-Make sure the PHP script for processing the login form is connected to your database (if applicable). Update the database connection details in the PHP file (`db.php` or similar) if needed.
+Make sure the PHP script for processing the login form is connected to your database. Update the database connection details in the PHP file (`connect.php`) if you changed name of database.
 
 ### 6. Access the Project
-- Open a browser and navigate to `http://localhost/login-project` (replace `login-project` with the name of your project folder).
+- Open a browser and navigate to http://localhost/Login-Page-1030 (replace `Login-Page-1030` with the name of your project folder).
 - You should see the login page.
 
 ## Features
@@ -93,26 +94,9 @@ Make sure the PHP script for processing the login form is connected to your data
 - **Backend Authentication**: The PHP script processes the login request and checks the credentials.
 - **Error Handling**: If incorrect credentials are entered, an error message is shown.
 
+## License
 
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this project as long as you include the original license.  
 
-## Preview Images
-
-### Sign-In and Registration Page
-
-<table>
-  <tr>
-    <td><img src="preview/sign-in.png" alt="Sign-in Page" width="400"/></td>
-    <td><img src="preview/register.png" alt="Registration Page" width="400"/></td>
-  </tr>
-</table>
-
-### Database and Homepage
-
-<table>
-  <tr>
-    <td><img src="preview/database.png" alt="Database Structure" width="400"/></td>
-    <td><img src="preview/users_info.png" alt="Users Info" width="400"/></td>
-    <td><img src="preview/homepage.png" alt="Homepage" width="400"/></td>
-  </tr>
-</table>
+See the full license text in the [LICENSE](LICENSE) file.
 
