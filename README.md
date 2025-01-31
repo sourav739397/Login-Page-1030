@@ -31,13 +31,21 @@ Here is a preview of project:
   </tr>
 </table>
 
+### Correct and Incorrect Credentials
+
+<table>
+  <tr>
+    <td><img src="preview/homepage.png" alt="Homepage" width="400"/></td>
+    <td><img src="preview/incorrect_credentials.png" alt="Incorrect Info" width="400"/></td>
+  </tr>
+</table>
+
 ### Database and Homepage
 
 <table>
   <tr>
     <td><img src="preview/database.png" alt="Database Structure" width="400"/></td>
     <td><img src="preview/users_info.png" alt="Users Info" width="400"/></td>
-    <td><img src="preview/homepage.png" alt="Homepage" width="400"/></td>
   </tr>
 </table>
 
