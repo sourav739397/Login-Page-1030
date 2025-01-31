@@ -94,9 +94,15 @@ Make sure the PHP script for processing the login form is connected to your data
 - **Backend Authentication**: The PHP script processes the login request and checks the credentials.
 - **Error Handling**: If incorrect credentials are entered, an error message is shown.
 
+## Thanks and Credits
+
+Special thanks to **Faria Afrin Tisha**, our DBMS course teacher, for her guidance and support in learning database management system.
+
 ## License
 
 This project is licensed under the **MIT License**. You are free to use, modify, and distribute this project as long as you include the original license.  
 
-See the full license text in the [LICENSE](LICENSE) file.
+---
+> *This project was created as part of an academic assignment and serves as a demonstration of authentication functionality using PHP and XAMPP.*
+
 
